@@ -47,19 +47,10 @@ body {
 }
 
 .img-flex {
-  display: inline;
+  display: block;
   width: 100%;
 }
-/*.logo {
-  /*position: absolute;
-  display: block;
-  /*left: -15em;
-  top: -15em;
-}
-*/
-img {
-  display: inline-block;
-}
+
 .banner-content {
   display: block;
   position: absolute;
@@ -69,14 +60,25 @@ img {
   transform: translateX(-50%);
   max-width: 45em;
   padding: 0 1.5em;
+}
 
+.logo {
+  position: absolute;
+  display: inline-block;
+  /*left: -15em;
+  top: -15em;*/
+  margin: 0;
+  float: left;
+}
+
+img {
+  display: inline-block;
+  width: 100%;
 }
 
 .banner-text {
   display: inline-block;
-  position: absolute;
   margin-left: 2em;
-  /*margin-right: -5em;*/
 }
 
 span {
@@ -86,7 +88,7 @@ span {
 .banner h2 {
   color: #000;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1;
   font-size: 3rem;
   font-family: "Roboto Condensed", sans-serif;
   font-weight: bold;
